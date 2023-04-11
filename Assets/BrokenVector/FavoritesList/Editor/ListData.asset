@@ -12,17 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee7838ac3d3e994090b23abf0ca8ea0, type: 3}
   m_Name: ListData
   m_EditorClassIdentifier: 
-  References:
-  - type: 1
-    actualReference: {fileID: 102900000, guid: 52e730bbca27c481fbd3ae8b0ddabd47, type: 3}
-    cachedDrawData:
-      Name: _Game
-      Icon: {fileID: 3764734208316478041, guid: 0000000000000000d000000000000000,
-        type: 0}
-      SceneData:
-        IsScene: 0
-        Scene: {fileID: 0}
-    cachedTypes:
-    - DefaultAsset
-    sceneGUID: 
-    localIdentifier: 0
+  References: []
