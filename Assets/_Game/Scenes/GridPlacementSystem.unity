@@ -1702,7 +1702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae34079fe05a427ea78fb15e9301ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _obj: {fileID: -8820851778804916105, guid: dcd16cdab834349a28895430a36b99ac, type: 3}
+  _database: {fileID: 11400000, guid: 4f95ad06d0800449986740893c7b4fb2, type: 2}
   _selectedGridIndicator: {fileID: 479289911}
 --- !u!1 &1930150327
 GameObject:
