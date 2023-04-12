@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlacementSystem : MonoBehaviour
 {
+    [SerializeField] ObjectToPlaceOnGrid _obj;
     [SerializeField] Transform _selectedGridIndicator;
     InputManager _inputManager;
     Grid _grid;
@@ -14,11 +15,12 @@ public class PlacementSystem : MonoBehaviour
         _grid = ServiceLocator.Get<Grid>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         _selectedGridIndicator.position = _inputManager.GetSelectedMapPosition();
         Vector3Int cellPos = _grid.WorldToCell(_inputManager.GetSelectedMapPosition());
-        _selectedGridIndicator.position = cellPos;
+        //_selectedGridIndicator.position = cellPos;
+        var cellCenterPos = _grid.GetCellCenterWorld(cellPos);
+        _selectedGridIndicator.position = new Vector3(cellCenterPos.x, _selectedGridIndicator.transform.position.y, cellCenterPos.z);
     }
 }
