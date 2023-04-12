@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlacementSystem : MonoBehaviour
 {
-    [SerializeField] ObjectToPlaceOnGrid _obj;
+    [SerializeField] GridPlaceableObject _obj;
     [SerializeField] Transform _selectedGridIndicator;
     InputManager _inputManager;
     Grid _grid;
